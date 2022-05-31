@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+.top-container {
+    display: flex;
+    margin-top: 110px;
+    margin-bottom: 96px;
+    flex-shrink: 0;
+}
+
+.title {
+    font-family: 'PT Serif';
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+    margin-left: 243px;
+    width: 278px;
+    flex-shrink: 0;
+}
+
+.about-container {
+    width: 439px;
+    margin-left: 200px;
+    flex-shrink: 0;
+}
+
+.about-title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+
+.about-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    flex-shrink: 0;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 230px;
+}
+
+.content-container {
+    margin-right: 66px;
+    width: 264px;
+    position: relative;
+    margin-bottom: 132px;
+}
+
+.img-container {
+    width: 238px;
+    height: 347px;
+    margin-bottom: 10px;
+}
+
+.image {
+    width: 100%;
+}
+
+.person-name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.job {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 30px;
+    right: -30px;
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+#job1 {
+    right: -40px;
+    top: 35px;
+}
+
+#img2, #img5 {
+    margin-top: 100px;
+}
+
+.footer {
+    text-align: center;
+    margin-bottom: 24px;
+    color: #BDBDBD;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.footer span {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .top-container {
+        flex-direction: column;
+    }
+    .title, .top-container, .main-container, .about-container{
+        margin-left: 12px;
+    }
+    .title {
+        text-align: left;
+        margin-bottom: 38px;
+    }
+    .main-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .content-container {
+        width: 156px;
+        height: 237px;
+        margin-right: 150px;
+    }
+    .img-container {
+        height: 240px;
+    }
+    .person-name {
+        margin-top: 105px;
+    }
+    .job {
+        right: -170px;
+        font-size: 16px;
+        font-weight: 600;
+        top: 50px;
+    }
+    #img4, #img6 {
+        margin-top: 75px;
+    }
+    #img5 {
+        margin-top: 0;
+    }
+    #job1 {
+        right: -170px;
+        top: 50px;
+    }
+    #job2 {
+        right: -150px;
+        top: 40px;
+    }
+    #job1, #job2 {
+        font-weight: 400;
+    }
+    .footer {
+        margin-top: 80px;
+    }
+}
+
+@media (min-width: 701px) and (max-width:1200px){
+    .main-container, .top-container, .title {
+        margin-left: 20px;
+    }
+    .about-text, .about-title, .about-container {
+        flex-shrink: 1;
+    }
+    .top-container {
+        flex-direction: column;
+    }
+    .about-container {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .main-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #img5 {
+        margin-top: 0;
+    }
+    #img4, #img6 {
+        margin-top: 75px;
+    }
+}
